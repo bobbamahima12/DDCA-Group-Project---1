@@ -1,0 +1,28 @@
+8-BIT SIGN-MAGNITUDE TEST CASES
+================================
+
+Input        Sign       Magnitude       Expected Value
+-------------------------------------------------------
+00000000     Positive   0000000         +0
+10000000     Negative   0000000         -0
+00000001     Positive   0000001         +1
+10000001     Negative   0000001         -1
+00000101     Positive   0000101         +5
+10000101     Negative   0000101         -5
+01111111     Positive   1111111         +127
+11111111     Negative   1111111         -127
+
+VALIDATION METHOD
+-----------------
+1. Enter the 8-bit input in Logisim.
+2. Check B7 (MSB) for the sign.
+3. Read B6-B0 as the magnitude.
+4. Convert the magnitude from binary to decimal.
+5. Apply the sign indicated by B7.
+
+EXAMPLE
+-------
+10000101
+B7 = 1 -> Negative
+B6-B0 = 0000101 -> 5
+Result = -5

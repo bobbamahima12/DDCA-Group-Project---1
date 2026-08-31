@@ -1,0 +1,5 @@
+Project: 8-Bit Signed Binary – Sign-Magnitude Representation
+Tool: Logisim
+Domain: Digital Logic / Computer Architecture
+Range: -127 to +127
+Core idea: 1 sign bit (MSB) + 7 magnitude bits
